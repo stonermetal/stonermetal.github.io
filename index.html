@@ -3,19 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stripe CodePen Gradient</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Xkytem</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <video width="600" height="100%" autoplay loop muted playsinline>
-      <source src="/Cloud_Mov_Encoded.mov" type='video/mp4; codecs="hvc1"'>
-      <source src="/Y_Scalability.webm" type="video/webm">
-    </video>
-    <canvas id="gradient-canvas" data-js-darken-top data-transition-in>
-        <!--
-          Remove data-js-darken-top to keep the same brightness in the upper part of the canvas
-        -->
-      </canvas>
-    <script src="script.js"></script>
+    <div class="navbar">
+        <div class="navbar__logo">
+            <img class="navbar__logo__img" src="vectors/blue_logo.svg" alt="">
+        </div>
+        <ul class="navbar__list">
+            <li class="navbar__list__link">
+                <p>Servicios</p>
+            </li>
+            <li class="navbar__list__link">
+                <p>Carreras</p>
+            </li>
+            <li class="navbar__list__link">
+                <p>Nosotros</p>
+            </li>
+            <li class="navbar__list__link navbar__list__link--btn">
+                <p>Contacto</p>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero__wrap">
+                <div class="hero__textbox">
+                    <img class="hero__textbox__arrow" src="vectors/arrow3.svg" alt="">
+                    <h1 class="hero__textbox__text">En Xkytem combinamos tecnología y creatividad para crear soluciones digitales y productos innovadores.</h1>
+                </div>
+                <div class="hero__showcase">
+                        <video class="hero__showcase--1" width="600" height="160%" autoplay loop muted playsinline>
+                            <!-- <source src="/Cloud_Mov_Encoded.mov" type='video/mp4; codecs="hvc1"'> -->
+                            <source src="3d/SlideShow_1.webm" type="video/webm">
+                        </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info__wrap">
+                <div class="info__arrow">
+                    
+                </div>
+                <div class="info__showcase">
+                    <div class="info__arrow">
+                        <img src="vectors/arrow2.svg" alt="">
+                    </div>
+                    <video width="600" height="100%" autoplay loop muted playsinline>
+                        <!-- <source src="/Cloud_Mov_Encoded.mov" type='video/mp4; codecs="hvc1"'> -->
+                        <source src="3d/info__3d--2.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="info__textbox">
+                    <p class="info__textbox__title">Nuestra</br>experiencia</p>
+                    <p class="info__textbox__subtitle">Seguridad</p>
+                    <p class="info__textbox__paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan tium, totam rem aperiam. Sed ut perspi ciatis unde omnis iste natus error sit voluptatem accu santium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan tium, totam aperiam sit voluptatem accusantium.</p>
+                    <div class="info__textbox__arrow info__textbox__arrow--1" id="info__textbox__arrow"></div>
+                    <div class="info__textbox__arrow info__textbox__arrow--2" id="info__textbox__arrow2"></div>
+                </div>
+            </div>
+            <canvas id="gradient-canvas"></canvas>
+            <svg width="0" height="0">
+                <defs>
+                  <clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+                    <path
+                      d="M 0,2
+                                              L 0,0
+                                              C .45 .15, .5 0, 1 0
+                                              L 2,0
+                                              L 1,1
+                                              C .45 1, .25 .9, 0 1
+                                              Z"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+
+        </section>
+
+        <section class="form">
+            <div class="form__title">
+                <p class="form__title__text">Cuentanos más de</br>tu proyecto y de ti</p>
+                <img class="form__title__arrow" src="vectors/arrow3.svg" alt="">
+            </div>
+            <div class="form__wrap">
+                <div class="form__timeline">
+
+                </div>
+                <div class="form__interactive">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="clouds">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+        <div class="contact">
+            
+        </div>
+    </footer>
+
+    <script src="scripts/gradient.js"></script>
+    <script src="scripts/down-arrow.js"></script>
+    <script src="scripts/data.js"></script>
 </body>
 </html>
