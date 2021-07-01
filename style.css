@@ -15,9 +15,9 @@ html,body {
     --gradient-color-4: #0E23FF;
   }
 
-video {
+img {
     position: absolute; /* or absolute */
-    width: 720px;
+    width: 360px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
