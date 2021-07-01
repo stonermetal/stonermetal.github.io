@@ -15,7 +15,7 @@ html,body {
     --gradient-color-4: #0E23FF;
   }
 
-img {
+body img {
     position: fixed; /* or absolute */
     width: 360px;
     top: 50%;
